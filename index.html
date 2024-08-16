@@ -1183,10 +1183,12 @@ src="https://www.facebook.com/tr?id=3358498187787941&ev=PageView&noscript=1"
           // Отримуємо значення полів форми
           var name = document.querySelector('input[name="name"]').value;
           var phone = document.querySelector('input[name="phone"]').value;
+	  var city = document.querySelector('input[name="city"]').value;
+	  var mail = document.querySelector('input[name="mail"]').value;
           
        
           // Формуємо повідомлення
-          var message = `Нове замовлення (басейн 3800):\nІм'я та прізвище: ${name}\nТелефон: ${phone};`
+          var message = `Нове замовлення:\nІм'я та прізвище: ${name}\nТелефон: ${phone}\nМісто: ${city}\nВідділення Нової Пошти: ${mail};`
        
           // Ваш токен та ID чату
           var token = '7199952215:AAHKwINj8HpCuhx8W-oF5sgWk89QnoOMh5o';
@@ -1227,6 +1229,8 @@ src="https://www.facebook.com/tr?id=3358498187787941&ev=PageView&noscript=1"
     
     <input class="field" type="text" name="name" placeholder="Введіть Ваше ім&#39;я та прізвище" control-id="ControlID-1">
     <input class="field" type="tel" name="phone" placeholder="Введіть Ваш телефон" required="" control-id="ControlID-2">
+    <input class="field" type="text" name="city" placeholder="Введіть Ваше місто та область" required="" control-id="ControlID-4">
+    <input class="field" type="text" name="mail" placeholder="Введіть Ваше відділення нової пошти" required="" control-id="ControlID-5">
     
     <button class="button" control-id="ControlID-3" id="order">Замовити зараз</button>
     
